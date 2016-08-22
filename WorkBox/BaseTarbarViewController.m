@@ -17,8 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setSelectedIndex:1];
-    
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(tabBarTurnRight:)];
     
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
@@ -28,8 +26,6 @@
     
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:swipeRight];
-    
-//    [self hideTabBar:YES];
 }
 
 - (void)didReceiveMemoryWarning {

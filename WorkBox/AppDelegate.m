@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WBTagsTableViewController.h"
-#import "WBTagDetailViewController.h"
+#import "WBTarbarViewController.h"
 
 @interface AppDelegate ()<UISplitViewControllerDelegate>
 
@@ -18,12 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UISplitViewController *splitViewController = (UISplitViewController *)tabBarController.viewControllers.firstObject;
-    splitViewController.delegate = self;
-    UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
-    WBTagsTableViewController *controller = (WBTagsTableViewController *)masterNavigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    WBTarbarViewController *tabBarController = (WBTarbarViewController *)self.window.rootViewController;
+    
+    tabBarController.managedObjectContext = self.managedObjectContext;
 
     return YES;
 }
@@ -129,17 +125,6 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
-    }
-}
-
-#pragma mark - Split view
-
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
-    if ([secondaryViewController isKindOfClass:[UINavigationController class]] && [[(UINavigationController *)secondaryViewController topViewController] isKindOfClass:[WBTagDetailViewController class]] && ([(WBTagDetailViewController *)[(UINavigationController *)secondaryViewController topViewController] detailItem] == nil)) {
-        // Return YES to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
-        return YES;
-    } else {
-        return NO;
     }
 }
 

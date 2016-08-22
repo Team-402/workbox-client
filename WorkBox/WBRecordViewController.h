@@ -10,4 +10,9 @@
 
 @interface WBRecordViewController : BaseViewController
 
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UITextField *descriptionTextField;
+@property (nonatomic, strong) UIView *selectView;
+@property (nonatomic, strong) UIButton *actionButton;
+
 @end

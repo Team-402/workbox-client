@@ -420,7 +420,7 @@
 				TargetAttributes = {
 					15A751FC1CF5738700B3F12C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Z3HECR2EM5;
+						DevelopmentTeam = 89GUZ34792;
 					};
 					15A752181CF5738700B3F12C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -807,8 +807,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = WorkBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = f4Tech.WorkBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.box.workbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -821,8 +822,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				INFOPLIST_FILE = WorkBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = f4Tech.WorkBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.box.workbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
