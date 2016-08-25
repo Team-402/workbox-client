@@ -10,4 +10,6 @@
 
 @interface BaseTarbarViewController : UITabBarController
 
+- (void)hideTabBar:(BOOL)hide;
+
 @end

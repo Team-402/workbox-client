@@ -7,12 +7,15 @@
 //
 
 #import "BaseViewController.h"
+#import "RecordTimeView.h"
+#import "RecordSelectView.h"
 
 @interface WBRecordViewController : BaseViewController
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UITextField *descriptionTextField;
-@property (nonatomic, strong) UIView *selectView;
+@property (nonatomic, strong) RecordTimeView *timeView;
+@property (nonatomic, strong) RecordSelectView *selectView;
 @property (nonatomic, strong) UIButton *actionButton;
 
 @end

@@ -22,6 +22,16 @@
 		15D54BF71D51CF6900E28A5E /* WBTarbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D54BF61D51CF6900E28A5E /* WBTarbarViewController.m */; };
 		15D54BF81D51CF6900E28A5E /* WBTarbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D54BF61D51CF6900E28A5E /* WBTarbarViewController.m */; };
 		15D54BF91D51CF6900E28A5E /* WBTarbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D54BF61D51CF6900E28A5E /* WBTarbarViewController.m */; };
+		15D601241D6C0C4E00191539 /* title_temp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15D601231D6C0C4E00191539 /* title_temp.jpeg */; };
+		15D601271D6C212E00191539 /* RecordSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601261D6C212E00191539 /* RecordSelectView.m */; };
+		15D601281D6C212E00191539 /* RecordSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601261D6C212E00191539 /* RecordSelectView.m */; };
+		15D601291D6C212E00191539 /* RecordSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601261D6C212E00191539 /* RecordSelectView.m */; };
+		15D601311D6C3C1500191539 /* RecordTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601301D6C3C1500191539 /* RecordTimeView.m */; };
+		15D601321D6C3C1500191539 /* RecordTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601301D6C3C1500191539 /* RecordTimeView.m */; };
+		15D601331D6C3C1500191539 /* RecordTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601301D6C3C1500191539 /* RecordTimeView.m */; };
+		15D601361D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
+		15D601371D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
+		15D601381D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
 		15E38AB31D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
 		15E38AB41D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
 		15E38AB51D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
@@ -108,6 +118,13 @@
 		15C8C8CE1D2650600021F8D8 /* WBTagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTagsTableViewController.m; sourceTree = "<group>"; };
 		15D54BF51D51CF6900E28A5E /* WBTarbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTarbarViewController.h; sourceTree = "<group>"; };
 		15D54BF61D51CF6900E28A5E /* WBTarbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTarbarViewController.m; sourceTree = "<group>"; };
+		15D601231D6C0C4E00191539 /* title_temp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title_temp.jpeg; path = Resources/title_temp.jpeg; sourceTree = "<group>"; };
+		15D601251D6C212E00191539 /* RecordSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSelectView.h; sourceTree = "<group>"; };
+		15D601261D6C212E00191539 /* RecordSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSelectView.m; sourceTree = "<group>"; };
+		15D6012F1D6C3C1500191539 /* RecordTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTimeView.h; sourceTree = "<group>"; };
+		15D601301D6C3C1500191539 /* RecordTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTimeView.m; sourceTree = "<group>"; };
+		15D601341D6EFCA000191539 /* RecordSelectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSelectViewCell.h; sourceTree = "<group>"; };
+		15D601351D6EFCA000191539 /* RecordSelectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSelectViewCell.m; sourceTree = "<group>"; };
 		15E38AB01D6571C600436085 /* WBRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRecordViewController.h; sourceTree = "<group>"; };
 		15E38AB11D6571C600436085 /* WBRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRecordViewController.m; sourceTree = "<group>"; };
 		15E38AB21D6571C600436085 /* WBRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBRecordViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +225,7 @@
 				15F0629B1D4B301F00064414 /* Model */,
 				15F1CFF01D4F2E6F0085DBFC /* View */,
 				15D54BFA1D51CF7B00E28A5E /* Controller */,
+				15D601221D6C0C2400191539 /* Resources */,
 				15A752001CF5738700B3F12C /* Supporting Files */,
 			);
 			path = WorkBox;
@@ -249,6 +267,14 @@
 				15E38ACE1D6584B700436085 /* Personal */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		15D601221D6C0C2400191539 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15D601231D6C0C4E00191539 /* title_temp.jpeg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		15E38ACB1D65849800436085 /* Tags */ = {
@@ -318,6 +344,12 @@
 			children = (
 				15F1CFF11D4F2E8E0085DBFC /* TagTableViewCell.h */,
 				15F1CFF21D4F2E8E0085DBFC /* TagTableViewCell.m */,
+				15D6012F1D6C3C1500191539 /* RecordTimeView.h */,
+				15D601301D6C3C1500191539 /* RecordTimeView.m */,
+				15D601251D6C212E00191539 /* RecordSelectView.h */,
+				15D601261D6C212E00191539 /* RecordSelectView.m */,
+				15D601341D6EFCA000191539 /* RecordSelectViewCell.h */,
+				15D601351D6EFCA000191539 /* RecordSelectViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -461,6 +493,7 @@
 			files = (
 				15A752131CF5738700B3F12C /* LaunchScreen.storyboard in Resources */,
 				15E38AC81D65848300436085 /* WBTagDetailViewController.xib in Resources */,
+				15D601241D6C0C4E00191539 /* title_temp.jpeg in Resources */,
 				15A752101CF5738700B3F12C /* Assets.xcassets in Resources */,
 				15E38AB61D6571C600436085 /* WBRecordViewController.xib in Resources */,
 				15E38ABF1D6571F200436085 /* WBPersonalViewController.xib in Resources */,
@@ -632,9 +665,12 @@
 				15F062921D4B300400064414 /* WBUserInfo.m in Sources */,
 				15A752051CF5738700B3F12C /* AppDelegate.m in Sources */,
 				15A752021CF5738700B3F12C /* main.m in Sources */,
+				15D601311D6C3C1500191539 /* RecordTimeView.m in Sources */,
 				15D54BF71D51CF6900E28A5E /* WBTarbarViewController.m in Sources */,
 				15F0628F1D4B300400064414 /* WBUserInfo+CoreDataProperties.m in Sources */,
 				15F0628C1D4B300400064414 /* WBTag.m in Sources */,
+				15D601271D6C212E00191539 /* RecordSelectView.m in Sources */,
+				15D601361D6EFCA000191539 /* RecordSelectViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,13 +682,16 @@
 				15F062901D4B300400064414 /* WBUserInfo+CoreDataProperties.m in Sources */,
 				15F062991D4B300400064414 /* WBRecord.m in Sources */,
 				15D54BF81D51CF6900E28A5E /* WBTarbarViewController.m in Sources */,
+				15D601321D6C3C1500191539 /* RecordTimeView.m in Sources */,
 				15F0628A1D4B300400064414 /* WBTag+CoreDataProperties.m in Sources */,
 				15F062961D4B300400064414 /* WBRecord+CoreDataProperties.m in Sources */,
 				15E38AB41D6571C600436085 /* WBRecordViewController.m in Sources */,
 				15F0628D1D4B300400064414 /* WBTag.m in Sources */,
 				15F062931D4B300400064414 /* WBUserInfo.m in Sources */,
 				15C8C8D01D2650600021F8D8 /* WBTagsTableViewController.m in Sources */,
+				15D601371D6EFCA000191539 /* RecordSelectViewCell.m in Sources */,
 				15F1CFF41D4F2E8E0085DBFC /* TagTableViewCell.m in Sources */,
+				15D601281D6C212E00191539 /* RecordSelectView.m in Sources */,
 				15E38AC61D65848300436085 /* WBTagDetailViewController.m in Sources */,
 				15E38ABD1D6571F200436085 /* WBPersonalViewController.m in Sources */,
 				15A7521E1CF5738700B3F12C /* WorkBoxTests.m in Sources */,
@@ -667,13 +706,16 @@
 				15F062911D4B300400064414 /* WBUserInfo+CoreDataProperties.m in Sources */,
 				15F0629A1D4B300400064414 /* WBRecord.m in Sources */,
 				15D54BF91D51CF6900E28A5E /* WBTarbarViewController.m in Sources */,
+				15D601331D6C3C1500191539 /* RecordTimeView.m in Sources */,
 				15F0628B1D4B300400064414 /* WBTag+CoreDataProperties.m in Sources */,
 				15F062971D4B300400064414 /* WBRecord+CoreDataProperties.m in Sources */,
 				15E38AB51D6571C600436085 /* WBRecordViewController.m in Sources */,
 				15F0628E1D4B300400064414 /* WBTag.m in Sources */,
 				15F062941D4B300400064414 /* WBUserInfo.m in Sources */,
 				15C8C8D11D2650600021F8D8 /* WBTagsTableViewController.m in Sources */,
+				15D601381D6EFCA000191539 /* RecordSelectViewCell.m in Sources */,
 				15F1CFF51D4F2E8E0085DBFC /* TagTableViewCell.m in Sources */,
+				15D601291D6C212E00191539 /* RecordSelectView.m in Sources */,
 				15E38AC71D65848300436085 /* WBTagDetailViewController.m in Sources */,
 				15E38ABE1D6571F200436085 /* WBPersonalViewController.m in Sources */,
 				15A752291CF5738700B3F12C /* WorkBoxUITests.m in Sources */,

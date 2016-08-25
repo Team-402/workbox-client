@@ -7,7 +7,6 @@
 //
 
 #import "TagTableViewCell.h"
-
 #define MAS_SHORTHAND
 #import "Masonry.h"
 

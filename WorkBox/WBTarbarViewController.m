@@ -28,7 +28,7 @@
     tagsViewController.managedObjectContext = self.managedObjectContext;
     
     [self setSelectedIndex:1];
-//    [self hideTabBar:YES];
+    [self hideTabBar:YES];
 }
 
 - (void)didReceiveMemoryWarning {

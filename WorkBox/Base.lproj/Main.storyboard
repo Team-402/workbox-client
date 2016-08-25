@@ -126,7 +126,7 @@
         <!--Record-->
         <scene sceneID="Cj1-jC-pN3">
             <objects>
-                <viewController id="bjn-pa-n1Y" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController id="bjn-pa-n1Y" customClass="WBRecordViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xcI-1j-jtw"/>
                         <viewControllerLayoutGuide type="bottom" id="ZIY-IX-4e5"/>
