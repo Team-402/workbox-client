@@ -18,6 +18,5 @@
 @property (nonatomic, assign) NSInteger value;
 
 - (id)initWithTitle:(NSString *)title Color:(UIColor *)color value:(NSInteger)value;
-- (id)config;
 
 @end

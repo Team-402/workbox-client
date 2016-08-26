@@ -32,6 +32,9 @@
 		15D601361D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
 		15D601371D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
 		15D601381D6EFCA000191539 /* RecordSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D601351D6EFCA000191539 /* RecordSelectViewCell.m */; };
+		15D6013B1D70103700191539 /* PersonalUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6013A1D70103700191539 /* PersonalUserView.m */; };
+		15D6013C1D70103700191539 /* PersonalUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6013A1D70103700191539 /* PersonalUserView.m */; };
+		15D6013D1D70103700191539 /* PersonalUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6013A1D70103700191539 /* PersonalUserView.m */; };
 		15E38AB31D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
 		15E38AB41D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
 		15E38AB51D6571C600436085 /* WBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E38AB11D6571C600436085 /* WBRecordViewController.m */; };
@@ -125,6 +128,9 @@
 		15D601301D6C3C1500191539 /* RecordTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTimeView.m; sourceTree = "<group>"; };
 		15D601341D6EFCA000191539 /* RecordSelectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSelectViewCell.h; sourceTree = "<group>"; };
 		15D601351D6EFCA000191539 /* RecordSelectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSelectViewCell.m; sourceTree = "<group>"; };
+		15D601391D70103700191539 /* PersonalUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalUserView.h; sourceTree = "<group>"; };
+		15D6013A1D70103700191539 /* PersonalUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalUserView.m; sourceTree = "<group>"; };
+		15D6013E1D702EDA00191539 /* WBPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPrefixHeader.pch; sourceTree = "<group>"; };
 		15E38AB01D6571C600436085 /* WBRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRecordViewController.h; sourceTree = "<group>"; };
 		15E38AB11D6571C600436085 /* WBRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRecordViewController.m; sourceTree = "<group>"; };
 		15E38AB21D6571C600436085 /* WBRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBRecordViewController.xib; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				15A752011CF5738700B3F12C /* main.m */,
+				15D6013E1D702EDA00191539 /* WBPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -350,6 +357,8 @@
 				15D601261D6C212E00191539 /* RecordSelectView.m */,
 				15D601341D6EFCA000191539 /* RecordSelectViewCell.h */,
 				15D601351D6EFCA000191539 /* RecordSelectViewCell.m */,
+				15D601391D70103700191539 /* PersonalUserView.h */,
+				15D6013A1D70103700191539 /* PersonalUserView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -662,6 +671,7 @@
 				15E38AB31D6571C600436085 /* WBRecordViewController.m in Sources */,
 				15F062981D4B300400064414 /* WBRecord.m in Sources */,
 				15F062791D487CD500064414 /* BaseTarbarViewController.m in Sources */,
+				15D6013B1D70103700191539 /* PersonalUserView.m in Sources */,
 				15F062921D4B300400064414 /* WBUserInfo.m in Sources */,
 				15A752051CF5738700B3F12C /* AppDelegate.m in Sources */,
 				15A752021CF5738700B3F12C /* main.m in Sources */,
@@ -683,6 +693,7 @@
 				15F062991D4B300400064414 /* WBRecord.m in Sources */,
 				15D54BF81D51CF6900E28A5E /* WBTarbarViewController.m in Sources */,
 				15D601321D6C3C1500191539 /* RecordTimeView.m in Sources */,
+				15D6013C1D70103700191539 /* PersonalUserView.m in Sources */,
 				15F0628A1D4B300400064414 /* WBTag+CoreDataProperties.m in Sources */,
 				15F062961D4B300400064414 /* WBRecord+CoreDataProperties.m in Sources */,
 				15E38AB41D6571C600436085 /* WBRecordViewController.m in Sources */,
@@ -707,6 +718,7 @@
 				15F0629A1D4B300400064414 /* WBRecord.m in Sources */,
 				15D54BF91D51CF6900E28A5E /* WBTarbarViewController.m in Sources */,
 				15D601331D6C3C1500191539 /* RecordTimeView.m in Sources */,
+				15D6013D1D70103700191539 /* PersonalUserView.m in Sources */,
 				15F0628B1D4B300400064414 /* WBTag+CoreDataProperties.m in Sources */,
 				15F062971D4B300400064414 /* WBRecord+CoreDataProperties.m in Sources */,
 				15E38AB51D6571C600436085 /* WBRecordViewController.m in Sources */,
@@ -848,6 +860,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkBox/WBPrefixHeader.pch";
 				INFOPLIST_FILE = WorkBox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -863,6 +877,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkBox/WBPrefixHeader.pch";
 				INFOPLIST_FILE = WorkBox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

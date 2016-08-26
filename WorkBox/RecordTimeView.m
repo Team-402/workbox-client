@@ -7,8 +7,6 @@
 //
 
 #import "RecordTimeView.h"
-#define MAS_SHORTHAND
-#import "Masonry.h"
 
 @implementation RecordTimeView
 
@@ -19,6 +17,12 @@
     // Drawing code
 }
 */
+- (id)init {
+    if (self = [super init]) {
+        
+    }
+    return [self config];
+}
 
 - (UILabel *)labelWithTitle:(NSString *)title {
     UILabel *label = [[UILabel alloc]init];

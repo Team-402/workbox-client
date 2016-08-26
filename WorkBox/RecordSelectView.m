@@ -7,8 +7,6 @@
 //
 
 #import "RecordSelectView.h"
-#define MAS_SHORTHAND
-#import "Masonry.h"
 
 @implementation RecordSelectView
 
@@ -24,11 +22,11 @@
     if (self = [super init]) {
         _selected = WBRecordSelectNone;
     }
-    return self;
+    return [self config];
 }
 
 - (id)cellWithTitle:(NSString *)title tag:(NSInteger)tag color:(UIColor *)color {
-    RecordSelectViewCell *cell = [[[RecordSelectViewCell alloc]initWithTitle:title Color:color value:tag]config];
+    RecordSelectViewCell *cell = [[RecordSelectViewCell alloc]initWithTitle:title Color:color value:tag];
     
     [self addSubview:cell];
     [cell makeConstraints:^(MASConstraintMaker *make) {

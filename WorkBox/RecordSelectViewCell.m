@@ -7,8 +7,6 @@
 //
 
 #import "RecordSelectViewCell.h"
-#define MAS_SHORTHAND
-#import "Masonry.h"
 
 @implementation RecordSelectViewCell
 
@@ -19,7 +17,7 @@
         _value = value;
         _selected = NO;
     }
-    return self;
+    return [self config];
 }
 
 - (id)config {
@@ -30,7 +28,7 @@
     [self addSubview:self.titleLabel];
     [self.titleLabel makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@30);
-        make.width.equalTo(@150);
+        make.width.equalTo(@200);
         make.centerX.equalTo(self.centerX);
         make.centerY.equalTo(self.centerY).offset(-20);
     }];
@@ -39,8 +37,8 @@
     [self.colorView setBackgroundColor:self.backgroundColor];
     [self addSubview:self.colorView];
     [self.colorView makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@20);
-        make.width.equalTo(@60);
+        make.height.equalTo(@15);
+        make.width.equalTo(@50);
         make.centerX.equalTo(self.centerX);
         make.centerY.equalTo(self.centerY).offset(20);
     }];

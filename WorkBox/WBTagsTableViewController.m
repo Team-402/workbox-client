@@ -23,6 +23,7 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (WBTagDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.tableView.scrollEnabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,12 +31,6 @@
 }
 
 - (void)insertNewObject:(id)sender {
-//    if (!self.objects) {
-//        self.objects = [[NSMutableArray alloc] init];
-//    }
-//    [self.objects insertObject:[NSDate date] atIndex:0];
-//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];

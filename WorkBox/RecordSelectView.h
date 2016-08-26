@@ -23,9 +23,6 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) RecordSelectViewCell *cell1;
 @property (nonatomic, strong) RecordSelectViewCell *cell2;
 @property (nonatomic, strong) RecordSelectViewCell *cell3;
-
 @property (nonatomic, assign) WBRecordSelectValue selected;
-
-- (id)config;
 
 @end

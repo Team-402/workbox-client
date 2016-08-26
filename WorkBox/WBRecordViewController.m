@@ -7,8 +7,6 @@
 //
 
 #import "WBRecordViewController.h"
-#define MAS_SHORTHAND
-#import "Masonry.h"
 
 @interface WBRecordViewController ()
 
@@ -63,7 +61,7 @@
 }
 
 - (void)configTimeView {
-    self.timeView = [[[RecordTimeView alloc]init]config];
+    self.timeView = [[RecordTimeView alloc]init];
     [self.view addSubview:self.timeView];
     
     [self.timeView makeConstraints:^(MASConstraintMaker *make) {
@@ -75,7 +73,7 @@
 }
 
 - (void)configSelectView {
-    self.selectView = [[[RecordSelectView alloc]init]config];
+    self.selectView = [[RecordSelectView alloc]init];
     [self.view addSubview:self.selectView];
     
     [self.selectView makeConstraints:^(MASConstraintMaker *make) {

@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface WBPersonalViewController : BaseViewController
+@interface WBPersonalViewController : BaseViewController <UIScrollViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIView *userView;
 
 @end

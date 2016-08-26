@@ -1,0 +1,15 @@
+//
+//  WBPrefixHeader.pch
+//  WorkBox
+//
+//  Created by ChenZS on 16/8/26.
+//  Copyright © 2016年 f4Tech. All rights reserved.
+//
+
+#ifndef WBPrefixHeader_pch
+#define WBPrefixHeader_pch
+
+#define MAS_SHORTHAND
+#import "Masonry.h"
+
+#endif /* WBPrefixHeader_pch */

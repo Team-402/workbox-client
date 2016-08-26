@@ -18,6 +18,4 @@
 @property (nonatomic, strong) UILabel *toTimeValue;
 @property (nonatomic, strong) UILabel *fromTimeValue;
 
-- (id)config;
-
 @end
