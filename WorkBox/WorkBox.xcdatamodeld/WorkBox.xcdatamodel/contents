@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="WBRecord" representedClassName="WBRecord" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="r_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="u_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WBTag" inverseName="record" inverseEntity="WBTag" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WBUserInfo" inverseName="record" inverseEntity="WBUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="WBTag" representedClassName="WBTag" syncable="YES">
+        <attribute name="enable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="t_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="record" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WBRecord" inverseName="tag" inverseEntity="WBRecord" syncable="YES"/>
+    </entity>
+    <entity name="WBUserInfo" representedClassName="WBUserInfo" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="u_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="record" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WBRecord" inverseName="user" inverseEntity="WBRecord" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="WBRecord" positionX="187" positionY="-129" width="128" height="195"/>
+        <element name="WBTag" positionX="45" positionY="191" width="128" height="105"/>
+        <element name="WBUserInfo" positionX="351" positionY="180" width="135" height="120"/>
+    </elements>
+</model>
