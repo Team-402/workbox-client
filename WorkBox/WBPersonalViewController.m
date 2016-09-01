@@ -16,7 +16,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self config];
+}
+
+- (void)config {
+    self.title = @"我的";
+    [self configScrollView];
+    [self configUserView];
+}
+
+- (void)configScrollView {
+    UIScrollView *scrollView = [[UIScrollView alloc]init];
+    [self.view addSubview:scrollView];
+    
+    [scrollView makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.view.width);
+        make.height.equalTo(self.view.height);
+        make.top.equalTo(@0);
+        make.centerX.equalTo(self.view.centerX);
+    }];
+    
+    self.scrollView = scrollView;
+}
+
+- (void)configUserView {
+    PersonalUserView *userView = [[PersonalUserView alloc]initWithName:@"Test" score:99];
+    [self.scrollView addSubview:userView];
+    
+    [userView makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.view.width);
+        make.height.equalTo(self.view.height).multipliedBy(0.3);
+        make.top.equalTo(self.scrollView.top);
+        make.centerX.equalTo(self.scrollView.centerX);
+    }];
+    
+    self.userView = userView;
 }
 
 - (void)didReceiveMemoryWarning {

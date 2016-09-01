@@ -17,5 +17,8 @@
 @property (nonatomic, strong) UIImageView *headView;
 @property (nonatomic, strong) UILabel *nameLabel;
 @property (nonatomic, strong) UILabel *scoreLabel;
+@property (nonatomic, strong) UILabel *statusLabel;
+
+- (id)initWithName:(NSString *)name score:(NSInteger)score;
 
 @end

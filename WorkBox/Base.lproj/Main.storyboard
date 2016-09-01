@@ -165,7 +165,7 @@
         <!--Personal-->
         <scene sceneID="inS-io-Jex">
             <objects>
-                <viewController id="Fic-kY-s15" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController id="Fic-kY-s15" customClass="WBPersonalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ykl-9A-Juo"/>
                         <viewControllerLayoutGuide type="bottom" id="dm8-OT-9Ee"/>

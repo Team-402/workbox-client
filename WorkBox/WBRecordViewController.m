@@ -21,11 +21,26 @@
 
 - (void)config {
     self.title = @"增加记录";
+    [self configScrollView];
     [self configImageView];
     [self configDescript];
     [self configTimeView];
     [self configSelectView];
     [self configActionButton];
+}
+
+- (void)configScrollView {
+    UIScrollView *scrollView = [[UIScrollView alloc]init];
+    [self.view addSubview:scrollView];
+    
+    [scrollView makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.view.width);
+        make.height.equalTo(self.view.height);
+        make.top.equalTo(@0);
+        make.centerX.equalTo(self.view.centerX);
+    }];
+    
+    self.scrollView = scrollView;
 }
 
 - (void)configImageView {
@@ -34,13 +49,13 @@
     [imageView setContentMode:UIViewContentModeScaleAspectFill];
     self.imageView = imageView;
     [self.imageView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.view addSubview:self.imageView];
+    [self.scrollView addSubview:self.imageView];
     
     [self.imageView makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self.view.width);
-        make.height.equalTo(self.view.height).multipliedBy(0.35);
+        make.width.equalTo(self.scrollView.width);
+        make.height.equalTo(self.scrollView.height).multipliedBy(0.3);
         make.top.equalTo(@0);
-        make.centerX.equalTo(self.view.centerX);
+        make.centerX.equalTo(self.scrollView.centerX);
     }];
 }
 
@@ -49,38 +64,38 @@
     self.descriptionTextField = textField;
     self.descriptionTextField.placeholder = @"description";
     [self.descriptionTextField setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.view addSubview:self.descriptionTextField];
+    [self.scrollView addSubview:self.descriptionTextField];
     
     [self.descriptionTextField makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(@5);
         make.trailing.equalTo(@(-5));
         make.height.equalTo(@35);
         make.top.equalTo(self.imageView.bottom);
-        make.centerX.equalTo(self.view.centerX);
+        make.centerX.equalTo(self.scrollView.centerX);
     }];
 }
 
 - (void)configTimeView {
     self.timeView = [[RecordTimeView alloc]init];
-    [self.view addSubview:self.timeView];
+    [self.scrollView addSubview:self.timeView];
     
     [self.timeView makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self.view.width);
+        make.width.equalTo(self.scrollView.width);
         make.height.equalTo(@100);
         make.top.equalTo(self.descriptionTextField.bottom);
-        make.centerX.equalTo(self.view.centerX);
+        make.centerX.equalTo(self.scrollView.centerX);
     }];
 }
 
 - (void)configSelectView {
     self.selectView = [[RecordSelectView alloc]init];
-    [self.view addSubview:self.selectView];
+    [self.scrollView addSubview:self.selectView];
     
     [self.selectView makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self.view.width);
-        make.height.equalTo(self.view.height).multipliedBy(0.3);
+        make.width.equalTo(self.scrollView.width);
+        make.height.equalTo(self.scrollView.height).multipliedBy(0.3);
         make.top.equalTo(self.timeView.bottom);
-        make.centerX.equalTo(self.view.centerX);
+        make.centerX.equalTo(self.scrollView.centerX);
     }];
 }
 

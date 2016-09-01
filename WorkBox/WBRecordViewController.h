@@ -17,5 +17,6 @@
 @property (nonatomic, strong) RecordTimeView *timeView;
 @property (nonatomic, strong) RecordSelectView *selectView;
 @property (nonatomic, strong) UIButton *actionButton;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 @end
